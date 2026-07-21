@@ -177,3 +177,30 @@ if (
         }
     });
 }
+/* ---------- Booking FAQ Accordion ---------- */
+
+const faqQuestions = document.querySelectorAll(".faq-question");
+
+if (faqQuestions.length > 0) {
+    faqQuestions.forEach(function (question) {
+        question.addEventListener("click", function () {
+            const currentItem = question.closest(".faq-item");
+            const currentIsOpen = currentItem.classList.contains("active");
+
+            document.querySelectorAll(".faq-item").forEach(function (item) {
+                item.classList.remove("active");
+
+                const itemQuestion = item.querySelector(".faq-question");
+
+                if (itemQuestion) {
+                    itemQuestion.setAttribute("aria-expanded", "false");
+                }
+            });
+
+            if (!currentIsOpen) {
+                currentItem.classList.add("active");
+                question.setAttribute("aria-expanded", "true");
+            }
+        });
+    });
+}

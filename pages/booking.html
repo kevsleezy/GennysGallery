@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Book a photography session with GennysGallery. Choose your session type, preferred date, location, and share your creative vision."
+    >
+
+    <title>Book a Session | GennysGallery</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Website CSS -->
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="stylesheet" href="../css/responsive.css?v=2">
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="site-header page-header-nav">
+        <nav class="navbar">
+
+            <a href="../index.html" class="logo" aria-label="GennysGallery homepage">
+                <span class="logo-name">GennysGallery</span>
+                <span class="logo-subtitle">Photography</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html" class="active">Book a Session</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a
+                href="https://www.instagram.com/gennysgalleryy/"
+                class="instagram-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit GennysGallery on Instagram"
+            >
+                <span class="instagram-icon">◎</span>
+                <span>@gennysgalleryy</span>
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Booking Page Hero -->
+        <section class="booking-page-hero">
+
+            <div class="booking-page-overlay"></div>
+
+            <div class="booking-page-hero-content">
+                <p class="section-eyebrow">Book Your Experience</p>
+
+                <h1>Let’s create something beautiful together.</h1>
+
+                <p>
+                    Tell me about your vision, choose your preferred session,
+                    and share the details that will help bring your idea to life.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Booking Form Section -->
+        <section class="booking-form-section">
+
+            <div class="booking-form-intro">
+                <p class="section-eyebrow">Session Inquiry</p>
+
+                <h2>Start planning your session.</h2>
+
+                <p>
+                    This form is the first step. Once submitted, Mari will review
+                    your request and follow up to confirm availability, location,
+                    pricing, and the final session details.
+                </p>
+
+                <div class="booking-contact-note">
+                    <span aria-hidden="true">✉</span>
+
+                    <div>
+                        <p>Prefer to email directly?</p>
+
+                        <a href="mailto:gennysgalleryy@icloud.com">
+                            gennysgalleryy@icloud.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <form class="booking-form" id="booking-form">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="client-name">Full Name</label>
+                        <input
+                            type="text"
+                            id="client-name"
+                            name="client-name"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="client-email">Email Address</label>
+                        <input
+                            type="email"
+                            id="client-email"
+                            name="client-email"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="client-phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="client-phone"
+                            name="client-phone"
+                            autocomplete="tel"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="client-instagram">Instagram Handle</label>
+                        <input
+                            type="text"
+                            id="client-instagram"
+                            name="client-instagram"
+                            placeholder="@username"
+                        >
+                    </div>
+
+                    <div class="form-group form-group-full">
+                        <label for="session-type">Session Type</label>
+
+                        <select id="session-type" name="session-type" required>
+                            <option value="" selected disabled>
+                                Choose a session type
+                            </option>
+                            <option value="portrait">Portrait Session</option>
+                            <option value="couples">Couples Session</option>
+                            <option value="beach">Beach Session</option>
+                            <option value="studio">Studio Session</option>
+                            <option value="editorial">Editorial Session</option>
+                            <option value="creative">Creative Concept</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferred-date">Preferred Date</label>
+                        <input
+                            type="date"
+                            id="preferred-date"
+                            name="preferred-date"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferred-time">Preferred Time</label>
+
+                        <select id="preferred-time" name="preferred-time" required>
+                            <option value="" selected disabled>
+                                Choose a preferred time
+                            </option>
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afternoon</option>
+                            <option value="golden-hour">Golden Hour</option>
+                            <option value="evening">Evening</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group form-group-full">
+                        <label for="session-location">Preferred Location</label>
+                        <input
+                            type="text"
+                            id="session-location"
+                            name="session-location"
+                            placeholder="Beach, park, studio, desert, city, or another location"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group form-group-full">
+                        <label for="session-vision">Tell Me About Your Vision</label>
+
+                        <textarea
+                            id="session-vision"
+                            name="session-vision"
+                            rows="7"
+                            placeholder="Describe the style, mood, occasion, outfits, location ideas, or any inspiration you have."
+                            required
+                        ></textarea>
+                    </div>
+
+                </div>
+
+                <button class="button button-gold booking-submit" type="submit">
+                    Send Inquiry
+                    <span aria-hidden="true">→</span>
+                </button>
+
+                <p class="booking-form-note">
+                    Submitting this form does not confirm the booking.
+                    Mari will contact you to finalize availability and details.
+                </p>
+
+            </form>
+
+        </section>
+<!-- Booking Process Section -->
+<section class="booking-process">
+
+    <div class="booking-process-heading">
+
+        <p class="section-eyebrow">What Happens Next</p>
+
+        <h2>A simple process from idea to gallery.</h2>
+
+        <p>
+            Every session begins with a conversation. From the first inquiry
+            to the final photographs, Mari will guide you through each step.
+        </p>
+
+    </div>
+
+    <div class="booking-process-grid">
+
+        <article class="booking-process-step">
+
+            <span class="booking-step-number">01</span>
+
+            <h3>Submit Your Inquiry</h3>
+
+            <p>
+                Share your preferred date, location, session type,
+                and the vision you have in mind.
+            </p>
+
+        </article>
+
+        <article class="booking-process-step">
+
+            <span class="booking-step-number">02</span>
+
+            <h3>Connect With Mari</h3>
+
+            <p>
+                Mari will contact you to discuss availability,
+                pricing, timing, and any questions you may have.
+            </p>
+
+        </article>
+
+        <article class="booking-process-step">
+
+            <span class="booking-step-number">03</span>
+
+            <h3>Plan the Details</h3>
+
+            <p>
+                Finalize the location, outfits, mood, and creative
+                direction so the session feels completely yours.
+            </p>
+
+        </article>
+
+        <article class="booking-process-step">
+
+            <span class="booking-step-number">04</span>
+
+            <h3>Create Something Beautiful</h3>
+
+            <p>
+                Enjoy the session and receive a carefully edited
+                gallery that captures your story and personality.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- Pricing Section -->
+<section class="booking-pricing">
+
+    <div class="booking-pricing-heading">
+
+        <p class="section-eyebrow">Session Pricing</p>
+
+        <h2>Choose the experience that fits your vision.</h2>
+
+        <p>
+            Each session includes professional photography, carefully edited
+            images, and a creative experience built around you.
+        </p>
+
+    </div>
+
+    <div class="pricing-category">
+
+        <div class="pricing-category-heading">
+            <p class="pricing-label">Studio Sessions</p>
+            <h3>Mira Mesa Studio</h3>
+        </div>
+
+        <div class="pricing-card-grid">
+
+            <article class="pricing-card">
+
+                <p class="pricing-card-name">Essential Studio</p>
+
+                <h4>45 Minutes</h4>
+
+                <p class="pricing-card-description">
+                    A focused session for updated portraits, branding images,
+                    or one polished creative look.
+                </p>
+
+                <ul>
+                    <li>1 outfit</li>
+                    <li>8 professionally edited images</li>
+                    <li>Mira Mesa studio location</li>
+                </ul>
+
+                <p class="pricing-card-price">
+                    <span>$90</span>
+                </p>
+
+                <a href="#booking-form" class="button button-outline">
+                    Reserve Your Session
+                    <span aria-hidden="true">→</span>
+                </a>
+
+                <p class="pricing-card-reassurance">
+                 Weekend availability may fill quickly.
+                </p>
+            </article>
+
+            <article class="pricing-card pricing-card-featured">
+
+                <p class="pricing-card-badge">Most Popular</p>
+
+                <p class="pricing-card-name">Signature Studio</p>
+
+                <h4>90 Minutes</h4>
+
+                <p class="pricing-card-description">
+                    More time for variety, outfit changes, and a fuller
+                    collection of creative portraits.
+                </p>
+
+                <ul>
+                    <li>1–2 outfits</li>
+                    <li>12 professionally edited images</li>
+                    <li>Mira Mesa studio location</li>
+                </ul>
+
+                <p class="pricing-card-price">
+                    <span>$150</span>
+                </p>
+
+                <a href="#booking-form" class="button button-gold">
+                    Reserve Your Session
+                    <span aria-hidden="true">→</span>
+                </a>
+                <p class="pricing-card-reassurance">
+                 Weekend availability may fill quickly.
+                </p>
+            </article>
+
+            <article class="pricing-card">
+
+                <p class="pricing-card-name">Full Studio Experience</p>
+
+                <h4>120 Minutes</h4>
+
+                <p class="pricing-card-description">
+                    The complete studio experience for multiple looks,
+                    detailed concepts, and a larger final gallery.
+                </p>
+
+                <ul>
+                    <li>1–3 outfits</li>
+                    <li>20 professionally edited images</li>
+                    <li>Mira Mesa studio location</li>
+                </ul>
+
+                <p class="pricing-card-price">
+                    <span>$200</span>
+                </p>
+
+                <a href="#booking-form" class="button button-outline">
+                    Reserve Your Session
+                    <span aria-hidden="true">→</span>
+                </a>
+                <p class="pricing-card-reassurance">
+                Weekend availability may fill quickly.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+
+    <div class="pricing-category">
+
+        <div class="pricing-category-heading">
+            <p class="pricing-label">On-Location Sessions</p>
+            <h3>San Diego County</h3>
+        </div>
+
+        <div class="pricing-card-grid">
+
+            <article class="pricing-card">
+
+                <p class="pricing-card-name">Essential Location</p>
+
+                <h4>60 Minutes</h4>
+
+                <p class="pricing-card-description">
+                    A relaxed outdoor session for portraits, couples,
+                    lifestyle images, or a simple creative concept.
+                </p>
+
+                <ul>
+                    <li>1 outfit</li>
+                    <li>8 professionally edited images</li>
+                    <li>Location within San Diego County</li>
+                </ul>
+
+                <p class="pricing-card-price">
+                    <span>$120</span>
+                </p>
+
+                <a href="#booking-form" class="button button-outline">
+                    Reserve Your Session
+                    <span aria-hidden="true">→</span>
+                </a>
+                <p class="pricing-card-reassurance">
+                Weekend availability may fill quickly.
+                </p>
+            </article>
+
+            <article class="pricing-card pricing-card-featured">
+
+                <p class="pricing-card-badge">Most Popular</p>
+
+                <p class="pricing-card-name">Signature Location</p>
+
+                <h4>90 Minutes</h4>
+
+                <p class="pricing-card-description">
+                    More time for movement, location variety, outfit changes,
+                    and a fuller storytelling experience.
+                </p>
+
+                <ul>
+                    <li>1–2 outfits</li>
+                    <li>12 professionally edited images</li>
+                    <li>Location within San Diego County</li>
+                </ul>
+
+                <p class="pricing-card-price">
+                    <span>$180</span>
+                </p>
+
+                <a href="#booking-form" class="button button-gold">
+                    Reserve Your Session
+                    <span aria-hidden="true">→</span>
+                </a>
+                <p class="pricing-card-reassurance">
+                Weekend availability may fill quickly.
+                </p>
+            </article>
+
+            <article class="pricing-card">
+
+                <p class="pricing-card-name">Full Location Experience</p>
+
+                <h4>120 Minutes</h4>
+
+                <p class="pricing-card-description">
+                    A complete on-location session for multiple looks,
+                    detailed concepts, and more time to create.
+                </p>
+
+                <ul>
+                    <li>1–3 outfits</li>
+                    <li>20 professionally edited images</li>
+                    <li>Location within San Diego County</li>
+                </ul>
+
+                <p class="pricing-card-price">
+                    <span>$250</span>
+                </p>
+
+                <a href="#booking-form" class="button button-outline">
+                    Reserve Your Session
+                    <span aria-hidden="true">→</span>
+                </a>
+                <p class="pricing-card-reassurance">
+                Weekend availability may fill quickly.
+                </p>
+            </article>
+
+        </div>
+
+        <p class="pricing-note">
+            Travel outside San Diego County is available for an additional
+            $2 per mile.
+        </p>
+
+    </div>
+
+    <div class="extra-editing">
+
+        <div>
+            <p class="pricing-label">Additional Editing</p>
+            <h3>Extra Edits</h3>
+        </div>
+
+        <div class="extra-editing-options">
+
+            <div class="extra-editing-option">
+                <div>
+                    <h4>Basic Edit</h4>
+                    <p>Basic touch-ups and lighting adjustments.</p>
+                </div>
+
+                <span>$8 per edit</span>
+            </div>
+
+            <div class="extra-editing-option">
+                <div>
+                    <h4>Advanced Edit</h4>
+                    <p>Additional or detailed editing requests.</p>
+                </div>
+
+                <span>$15–$20 per edit</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Booking FAQ Section -->
+<section class="booking-faq">
+
+    <div class="booking-faq-heading">
+
+        <p class="section-eyebrow">Frequently Asked Questions</p>
+
+        <h2>Everything you may want to know before booking.</h2>
+
+        <p>
+            Every session is a little different, but these answers cover
+            some of the most common questions clients ask before getting started.
+        </p>
+
+    </div>
+
+    <div class="faq-list">
+
+        <article class="faq-item">
+
+            <button
+                class="faq-question"
+                type="button"
+                aria-expanded="false"
+            >
+                <span>How long is a photography session?</span>
+                <span class="faq-symbol" aria-hidden="true">+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    Most sessions are booked by the hour. The final session
+                    length can depend on the location, number of outfits,
+                    and the creative direction you have in mind.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="faq-item">
+
+            <button
+                class="faq-question"
+                type="button"
+                aria-expanded="false"
+            >
+                <span>Where are sessions available?</span>
+                <span class="faq-symbol" aria-hidden="true">+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    Sessions can take place in a studio or at an outdoor
+                    location such as a beach, park, desert, mountain area,
+                    or another location that fits your vision.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="faq-item">
+
+            <button
+                class="faq-question"
+                type="button"
+                aria-expanded="false"
+            >
+                <span>Can I bring more than one outfit?</span>
+                <span class="faq-symbol" aria-hidden="true">+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    Yes. Outfit changes can be included when the session length
+                    allows enough time. Mari can also help you plan outfits that
+                    match the location, mood, and overall concept.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="faq-item">
+
+            <button
+                class="faq-question"
+                type="button"
+                aria-expanded="false"
+            >
+                <span>What happens if the weather changes?</span>
+                <span class="faq-symbol" aria-hidden="true">+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    Outdoor sessions may be rescheduled when weather conditions
+                    would affect safety or the quality of the photographs.
+                    Mari will communicate with you before the session if any
+                    changes are needed.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="faq-item">
+
+            <button
+                class="faq-question"
+                type="button"
+                aria-expanded="false"
+            >
+                <span>How will I receive my edited photographs?</span>
+                <span class="faq-symbol" aria-hidden="true">+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    Edited photographs will be delivered digitally. Final
+                    delivery details, editing time, and the number of included
+                    images will be discussed when the session is confirmed.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="faq-item">
+
+            <button
+                class="faq-question"
+                type="button"
+                aria-expanded="false"
+            >
+                <span>Is submitting the inquiry a confirmed booking?</span>
+                <span class="faq-symbol" aria-hidden="true">+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    No. The inquiry helps Mari understand your vision and
+                    preferred date. Your session is confirmed only after
+                    availability, pricing, location, and final details have
+                    been agreed upon.
+                </p>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+    </main>
+
+    <!-- Website JavaScript -->
+    <script src="../js/script.js?v=2"></script>
+
+</body>
+</html>

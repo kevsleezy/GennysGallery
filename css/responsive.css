@@ -602,3 +602,180 @@
         font-size: 2rem;
     }
 }
+/* =========================================
+   RESPONSIVE BOOKING PAGE
+   ========================================= */
+
+@media screen and (max-width: 1050px) {
+
+    .booking-form-section {
+        grid-template-columns: 1fr;
+        gap: 65px;
+    }
+
+    .booking-form-intro {
+        position: static;
+        max-width: 760px;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+
+    .booking-page-hero {
+        min-height: 68vh;
+        padding: 145px 6% 80px;
+    }
+
+    .booking-page-hero-content {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .booking-page-hero-content h1 {
+        font-size: clamp(4rem, 15vw, 5.8rem);
+    }
+
+    .booking-form-section {
+        width: 88%;
+        padding: 85px 0 100px;
+        gap: 50px;
+    }
+
+    .booking-form {
+        padding: 36px 26px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    .form-group-full {
+        grid-column: auto;
+    }
+
+    .booking-submit {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .booking-page-hero {
+        min-height: 64vh;
+        padding-top: 130px;
+    }
+
+    .booking-page-hero-content h1 {
+        font-size: 4.2rem;
+    }
+
+    .booking-form-intro h2 {
+        font-size: 3.4rem;
+    }
+
+    .booking-form {
+        padding: 30px 20px;
+    }
+}
+/* ---------- Responsive Booking Process ---------- */
+
+@media screen and (max-width: 1050px) {
+
+    .booking-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .booking-process-step {
+        border-bottom: 1px solid rgba(201, 165, 104, 0.28);
+    }
+
+    .booking-process-step:nth-child(2n) {
+        border-right: 1px solid rgba(201, 165, 104, 0.28);
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .booking-process {
+        padding: 85px 6% 95px;
+    }
+
+    .booking-process-heading {
+        margin-bottom: 48px;
+    }
+
+    .booking-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-process-step {
+        min-height: auto;
+        padding: 36px 28px;
+
+        border-right: 1px solid rgba(201, 165, 104, 0.28);
+    }
+
+    .booking-process-step:nth-child(2n) {
+        border-right: 1px solid rgba(201, 165, 104, 0.28);
+    }
+
+    .booking-step-number {
+        margin-bottom: 24px;
+    }
+}
+/* ---------- Responsive Pricing Cards ---------- */
+
+@media screen and (max-width: 1050px) {
+
+    .pricing-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card,
+    .pricing-card-featured {
+        min-height: auto;
+        transform: none;
+    }
+
+    .pricing-card-featured:hover,
+    .pricing-card:not(.pricing-card-featured):hover {
+        transform: translateY(-6px);
+    }
+
+    .extra-editing {
+        grid-template-columns: 1fr;
+        gap: 38px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .booking-pricing {
+        padding: 90px 6% 100px;
+    }
+
+    .pricing-card {
+        padding: 38px 26px;
+    }
+
+    .pricing-card-description {
+        min-height: auto;
+    }
+
+    .extra-editing {
+        padding: 34px 26px;
+    }
+
+    .extra-editing-options {
+        grid-template-columns: 1fr;
+    }
+
+    .extra-editing-option {
+        padding-left: 20px;
+    }
+}
