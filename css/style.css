@@ -2379,3 +2379,71 @@ body.lightbox-open {
     line-height: 1.6;
     text-align: center;
 }
+/* =========================================
+   SERVICES PAGE
+   ========================================= */
+
+.services-page-hero {
+    position: relative;
+    min-height: 78vh;
+    padding: 145px 6% 95px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(
+            rgba(5, 5, 5, 0.48),
+            rgba(5, 5, 5, 0.84)
+        ),
+        url("../assets/images/portfolio/studio/studio-cowgirl-roses-portrait.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.services-page-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(201, 165, 104, 0.12),
+            transparent 65%
+        );
+}
+
+.services-page-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(92%, 980px);
+    margin-top: 45px;
+
+    text-align: center;
+}
+
+.services-page-content h1 {
+    max-width: 950px;
+    margin: 18px auto 28px;
+
+    font-family: var(--font-heading);
+    font-size: clamp(4.2rem, 8vw, 8rem);
+    font-weight: 400;
+    line-height: 0.92;
+}
+
+.services-page-content > p:last-child {
+    max-width: 720px;
+    margin: 0 auto;
+
+    color: var(--color-muted);
+
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
