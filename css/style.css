@@ -2789,3 +2789,493 @@ body.lightbox-open {
     opacity: 1;
     transform: translateY(0);
 }
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+
+.about-page-hero {
+
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: #111;
+
+}
+
+.about-hero-image {
+
+    overflow: hidden;
+
+}
+
+.about-hero-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 1.2s ease;
+
+}
+
+.about-page-hero:hover .about-hero-image img {
+
+    transform: scale(1.04);
+
+}
+
+.about-hero-content {
+
+    padding: 120px 8%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+.about-hero-content h1 {
+
+    margin: 20px 0 30px;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(4.2rem,7vw,7rem);
+
+    font-weight: 400;
+
+    line-height: .92;
+
+}
+
+.about-hero-content p {
+
+    max-width: 620px;
+
+    color: var(--color-muted);
+
+    line-height: 1.9;
+
+}
+
+.meet-mari-section {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: var(--color-charcoal);
+
+}
+
+.meet-mari-image {
+
+    min-height: 760px;
+
+    overflow: hidden;
+
+}
+
+.meet-mari-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 1s ease;
+}
+
+.meet-mari-section:hover .meet-mari-image img {
+    transform: scale(1.035);
+}
+
+.meet-mari-content {
+
+    padding: 100px clamp(45px,7vw,110px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+.meet-mari-content h2 {
+
+    margin: 18px 0 28px;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(3.5rem,6vw,6rem);
+
+    font-weight: 400;
+
+    line-height: .95;
+
+}
+
+.meet-mari-lead {
+
+    margin-bottom: 28px;
+
+    color: white;
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+
+}
+
+.meet-mari-content p {
+
+    color: var(--color-muted);
+
+    line-height: 1.9;
+
+}
+
+.meet-mari-content .button {
+
+    margin-top: 40px;
+
+    width: fit-content;
+
+}
+/* ---------- About Philosophy ---------- */
+
+.about-philosophy {
+    position: relative;
+    min-height: 760px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background-color: var(--color-black);
+}
+
+.about-philosophy-image {
+    position: absolute;
+    inset: 0;
+}
+
+.about-philosophy-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 1.2s ease;
+}
+
+.about-philosophy:hover .about-philosophy-image img {
+    transform: scale(1.035);
+}
+
+.about-philosophy-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(5, 5, 5, 0.62),
+            rgba(5, 5, 5, 0.82)
+        );
+}
+
+.about-philosophy-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(88%, 1050px);
+
+    text-align: center;
+}
+
+.about-philosophy-content h2 {
+    margin: 18px 0 30px;
+
+    font-family: var(--font-heading);
+    font-size: clamp(3.5rem, 6vw, 6.5rem);
+    font-weight: 400;
+    line-height: 0.95;
+}
+
+.about-philosophy-content > p:last-child {
+    max-width: 760px;
+    margin: 0 auto;
+
+    color: var(--color-muted);
+
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+/* ---------- Behind the Camera ---------- */
+
+.behind-camera-section {
+    min-height: 780px;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(420px, 0.85fr);
+
+    background-color: var(--color-black);
+}
+
+.behind-camera-content {
+    padding: 105px clamp(48px, 7vw, 120px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.behind-camera-content h2 {
+    margin: 16px 0 30px;
+
+    font-family: var(--font-heading);
+    font-size: clamp(3.6rem, 5.8vw, 6.2rem);
+    font-weight: 400;
+    line-height: 0.94;
+}
+
+.behind-camera-content > p {
+    max-width: 720px;
+
+    color: var(--color-muted);
+
+    font-size: 0.9rem;
+    line-height: 1.95;
+}
+
+.behind-camera-content > p + p {
+    margin-top: 20px;
+}
+
+.behind-camera-image {
+    min-height: 780px;
+    overflow: hidden;
+}
+
+.behind-camera-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 1s ease;
+}
+
+.behind-camera-section:hover .behind-camera-image img {
+    transform: scale(1.035);
+}
+
+.behind-camera-details {
+    margin-top: 48px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.behind-camera-details div {
+    padding-top: 24px;
+
+    border-top: 1px solid rgba(201, 165, 104, 0.3);
+}
+
+.behind-camera-details span {
+    color: var(--color-gold);
+
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+}
+
+.behind-camera-details h3 {
+    margin: 14px 0 10px;
+
+    font-family: var(--font-heading);
+    font-size: 1.55rem;
+    font-weight: 400;
+}
+
+.behind-camera-details p {
+    color: var(--color-muted);
+
+    font-size: 0.75rem;
+    line-height: 1.75;
+}
+/* ---------- About Final CTA ---------- */
+
+.about-final-cta {
+    position: relative;
+    min-height: 680px;
+    padding: 110px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(
+            rgba(5, 5, 5, 0.56),
+            rgba(5, 5, 5, 0.86)
+        ),
+        url("../assets/images/about/mari-studio-portrait.jpg");
+
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.about-final-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(201, 165, 104, 0.13),
+            transparent 65%
+        );
+}
+
+.about-final-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(100%, 900px);
+
+    text-align: center;
+}
+
+.about-final-content h2 {
+    margin: 18px 0 28px;
+
+    font-family: var(--font-heading);
+    font-size: clamp(4rem, 7vw, 7rem);
+    font-weight: 400;
+    line-height: 0.92;
+}
+
+.about-final-content > p:last-of-type {
+    max-width: 670px;
+    margin: 0 auto;
+
+    color: var(--color-muted);
+
+    font-size: 0.92rem;
+    line-height: 1.9;
+}
+
+.about-final-actions {
+    margin-top: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+/* ---------- About Experience Timeline ---------- */
+
+.about-experience {
+    padding: 120px 5% 130px;
+
+    background-color: var(--color-charcoal);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.about-experience-heading {
+    width: min(100%, 880px);
+    margin: 0 auto 75px;
+
+    text-align: center;
+}
+
+.about-experience-heading h2 {
+    margin: 14px 0 24px;
+
+    font-family: var(--font-heading);
+    font-size: clamp(3.3rem, 5.8vw, 6rem);
+    font-weight: 400;
+    line-height: 0.94;
+}
+
+.about-experience-heading > p:last-child {
+    max-width: 680px;
+    margin: 0 auto;
+
+    color: var(--color-muted);
+
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+.about-experience-grid {
+    width: min(100%, 1450px);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.about-experience-step {
+    min-height: 290px;
+    padding: 38px 32px;
+
+    border-left: 1px solid rgba(201, 165, 104, 0.28);
+
+    transition:
+        background-color var(--transition),
+        transform var(--transition);
+}
+
+.about-experience-step:last-child {
+    border-right: 1px solid rgba(201, 165, 104, 0.28);
+}
+
+.about-experience-step:hover {
+    background-color: rgba(201, 165, 104, 0.05);
+    transform: translateY(-6px);
+}
+
+.about-experience-number {
+    display: block;
+    margin-bottom: 34px;
+
+    color: var(--color-gold);
+
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.about-experience-step h3 {
+    margin-bottom: 16px;
+
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.about-experience-step p {
+    color: var(--color-muted);
+
+    font-size: 0.78rem;
+    line-height: 1.85;
+}
