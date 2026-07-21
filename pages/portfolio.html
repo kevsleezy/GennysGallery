@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore featured photography by GennysGallery, including portraits, beach sessions, studio work, seasonal concepts, and creative editorials."
+    >
+
+    <title>Portfolio | GennysGallery</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Website CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="site-header page-header-nav">
+        <nav class="navbar">
+
+            <a href="../index.html" class="logo" aria-label="GennysGallery homepage">
+                <span class="logo-name">GennysGallery</span>
+                <span class="logo-subtitle">Photography</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="portfolio.html" class="active">Portfolio</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+
+                <li>
+                    <a href="booking.html">Book a Session</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <a
+                href="https://www.instagram.com/gennysgalleryy/"
+                class="instagram-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit GennysGallery on Instagram"
+            >
+                <span class="instagram-icon">◎</span>
+                <span>@gennysgalleryy</span>
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Portfolio Page Hero -->
+        <section class="portfolio-hero">
+
+            <div class="portfolio-hero-overlay"></div>
+
+            <div class="portfolio-hero-content">
+
+                <p class="section-eyebrow">Selected Work</p>
+
+                <h1>Portfolio</h1>
+
+                <div class="hero-divider">
+                    <span></span>
+                    <span class="divider-symbol">✦</span>
+                    <span></span>
+                </div>
+
+                <p>
+                    A collection of creative portraits, cinematic moments,
+                    and stories captured through Mari’s perspective.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Portfolio Filters -->
+        <section class="portfolio-gallery-section">
+
+            <div class="portfolio-filter-header">
+
+                <div>
+                    <p class="section-eyebrow">Explore the Gallery</p>
+                    <h2>Every image tells a different story.</h2>
+                </div>
+
+                <div class="portfolio-filters" role="group" aria-label="Portfolio categories">
+
+                    <button class="filter-button active" type="button" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter-button" type="button" data-filter="portraits">
+                        Portraits
+                    </button>
+
+                    <button class="filter-button" type="button" data-filter="beach">
+                        Beach
+                    </button>
+
+                    <button class="filter-button" type="button" data-filter="studio">
+                        Studio
+                    </button>
+
+                    <button class="filter-button" type="button" data-filter="seasonal">
+                        Seasonal
+                    </button>
+
+                    <button class="filter-button" type="button" data-filter="automotive">
+                        Automotive
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Portfolio Gallery -->
+<div class="portfolio-grid">
+
+    <button
+        class="portfolio-item"
+        type="button"
+        data-category="portraits"
+        data-title="Natural Light Portrait"
+        data-image="../assets/images/portfolio/portraits/sunlight-leaf-portrait.jpg"
+    >
+        <img
+            src="../assets/images/portfolio/portraits/sunlight-leaf-portrait.jpg"
+            alt="Creative portrait photographed through leaves and natural sunlight"
+        >
+
+        <span class="portfolio-item-overlay">
+            <span class="portfolio-item-category">Portraits</span>
+            <span class="portfolio-item-title">Natural Light</span>
+        </span>
+    </button>
+
+    <button
+        class="portfolio-item"
+        type="button"
+        data-category="beach"
+        data-title="Ocean Portrait"
+        data-image="../assets/images/portfolio/beach/beach-white-dress-water.jpg"
+    >
+        <img
+            src="../assets/images/portfolio/beach/beach-white-dress-water.jpg"
+            alt="Woman in a white dress posing in ocean waves"
+        >
+
+        <span class="portfolio-item-overlay">
+            <span class="portfolio-item-category">Beach</span>
+            <span class="portfolio-item-title">Ocean Portrait</span>
+        </span>
+    </button>
+
+    <button
+        class="portfolio-item portfolio-item-tall"
+        type="button"
+        data-category="studio"
+        data-title="Studio Detail"
+        data-image="../assets/images/portfolio/studio/studio-black-background-portrait.jpg"
+    >
+        <img
+            src="../assets/images/portfolio/studio/studio-black-background-portrait.jpg"
+            alt="Detailed studio portrait against a dark background"
+        >
+
+        <span class="portfolio-item-overlay">
+            <span class="portfolio-item-category">Studio</span>
+            <span class="portfolio-item-title">Studio Detail</span>
+        </span>
+    </button>
+
+    <button
+        class="portfolio-item"
+        type="button"
+        data-category="seasonal"
+        data-title="Seasonal Story"
+        data-image="../assets/images/portfolio/seasonal/pumpkin-couple-sparklers.jpg"
+    >
+        <img
+            src="../assets/images/portfolio/seasonal/pumpkin-couple-sparklers.jpg"
+            alt="Couple wearing pumpkin masks and holding sparklers at sunset"
+        >
+
+        <span class="portfolio-item-overlay">
+            <span class="portfolio-item-category">Seasonal</span>
+            <span class="portfolio-item-title">Seasonal Story</span>
+        </span>
+    </button>
+
+    <button
+        class="portfolio-item portfolio-item-wide"
+        type="button"
+        data-category="automotive"
+        data-title="Pink Car Concept"
+        data-image="../assets/images/portfolio/automotive/pink-car-foam-concept.jpg"
+    >
+        <img
+            src="../assets/images/portfolio/automotive/pink-car-foam-concept.jpg"
+            alt="Creative photography concept with a pink sports car"
+        >
+
+        <span class="portfolio-item-overlay">
+            <span class="portfolio-item-category">Automotive</span>
+            <span class="portfolio-item-title">Pink Car Concept</span>
+        </span>
+    </button>
+
+    <button
+        class="portfolio-item"
+        type="button"
+        data-category="studio"
+        data-title="Editorial Roses"
+        data-image="../assets/images/portfolio/studio/studio-cowgirl-boots-roses.jpg"
+    >
+        <img
+            src="../assets/images/portfolio/studio/studio-cowgirl-boots-roses.jpg"
+            alt="Editorial studio portrait with cowboy boots and red roses"
+        >
+
+        <span class="portfolio-item-overlay">
+            <span class="portfolio-item-category">Studio</span>
+            <span class="portfolio-item-title">Editorial Roses</span>
+        </span>
+    </button>
+
+    <button
+        class="portfolio-item portfolio-item-tall"
+        type="button"
+        data-category="beach"
+        data-title="Golden Coast"
+        data-image="../assets/images/portfolio/beach/beach-golden-rock-portrait.jpg"
+    >
+        <img
+            src="../assets/images/portfolio/beach/beach-golden-rock-portrait.jpg"
+            alt="Golden-hour portrait beside coastal rocks"
+        >
+
+        <span class="portfolio-item-overlay">
+            <span class="portfolio-item-category">Beach</span>
+            <span class="portfolio-item-title">Golden Coast</span>
+        </span>
+    </button>
+
+    <button
+        class="portfolio-item"
+        type="button"
+        data-category="studio"
+        data-title="Denim Portrait"
+        data-image="../assets/images/portfolio/studio/studio-denim-portrait.jpg"
+    >
+        <img
+            src="../assets/images/portfolio/studio/studio-denim-portrait.jpg"
+            alt="Studio fashion portrait featuring denim styling"
+        >
+
+        <span class="portfolio-item-overlay">
+            <span class="portfolio-item-category">Studio</span>
+            <span class="portfolio-item-title">Denim Portrait</span>
+        </span>
+    </button>
+
+    <button
+        class="portfolio-item"
+        type="button"
+        data-category="beach"
+        data-title="Beach Silhouette"
+        data-image="../assets/images/portfolio/beach/beach-silhouette.jpg"
+    >
+        <img
+            src="../assets/images/portfolio/beach/beach-silhouette.jpg"
+            alt="Silhouette portrait photographed at the beach during sunset"
+        >
+
+        <span class="portfolio-item-overlay">
+            <span class="portfolio-item-category">Beach</span>
+            <span class="portfolio-item-title">Beach Silhouette</span>
+        </span>
+    </button>
+
+    <button
+        class="portfolio-item portfolio-item-wide"
+        type="button"
+        data-category="automotive"
+        data-title="Car Wash Editorial"
+        data-image="../assets/images/portfolio/automotive/pink-car-wash-portrait.jpg"
+    >
+        <img
+            src="../assets/images/portfolio/automotive/pink-car-wash-portrait.jpg"
+            alt="Editorial portrait photographed beside a pink sports car"
+        >
+
+        <span class="portfolio-item-overlay">
+            <span class="portfolio-item-category">Automotive</span>
+            <span class="portfolio-item-title">Car Wash Editorial</span>
+        </span>
+    </button>
+
+    <button
+        class="portfolio-item"
+        type="button"
+        data-category="studio"
+        data-title="Cowgirl Portrait"
+        data-image="../assets/images/portfolio/studio/studio-cowgirl-roses-portrait.jpg"
+    >
+        <img
+            src="../assets/images/portfolio/studio/studio-cowgirl-roses-portrait.jpg"
+            alt="Studio cowgirl portrait holding red roses"
+        >
+
+        <span class="portfolio-item-overlay">
+            <span class="portfolio-item-category">Studio</span>
+            <span class="portfolio-item-title">Cowgirl Portrait</span>
+        </span>
+    </button>
+
+    <button
+        class="portfolio-item"
+        type="button"
+        data-category="beach"
+        data-title="Blue Coast Portrait"
+        data-image="../assets/images/portfolio/beach/beach-blue-outfit-portrait.jpg"
+    >
+        <img
+            src="../assets/images/portfolio/beach/beach-blue-outfit-portrait.jpg"
+            alt="Beach portrait featuring a turquoise outfit"
+        >
+
+        <span class="portfolio-item-overlay">
+            <span class="portfolio-item-category">Beach</span>
+            <span class="portfolio-item-title">Blue Coast</span>
+        </span>
+    </button>
+
+</div>
+
+        </section>
+<!-- Portfolio Booking Call-to-Action -->
+<section class="portfolio-booking-cta">
+
+    <div class="portfolio-booking-content">
+
+        <p class="section-eyebrow">Ready to Create?</p>
+
+        <h2>
+            Your story deserves<br>
+            to be captured beautifully.
+        </h2>
+
+        <p>
+            Whether you already have a complete vision or only the beginning
+            of an idea, let’s create a session that feels personal,
+            intentional, and completely your own.
+        </p>
+
+        <a href="booking.html" class="button button-gold">
+            Book Your Session
+            <span aria-hidden="true">→</span>
+        </a>
+
+    </div>
+
+</section>
+
+    </main>
+<!-- Website Footer -->
+<footer class="site-footer">
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+
+            <a href="../index.html" class="footer-logo">
+                <span class="footer-logo-name">GennysGallery</span>
+                <span class="footer-logo-subtitle">Photography</span>
+            </a>
+
+            <p>
+                Creative portraits. Real moments.<br>
+                Bold stories.
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h2>Quick Links</h2>
+
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Book a Session</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h2>Services</h2>
+
+            <ul>
+                <li><a href="services.html">Portraits</a></li>
+                <li><a href="services.html">Couples</a></li>
+                <li><a href="services.html">Beach Sessions</a></li>
+                <li><a href="services.html">Studio Sessions</a></li>
+                <li><a href="services.html">Editorial</a></li>
+                <li><a href="services.html">Creative Concepts</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-column footer-contact">
+
+            <h2>Contact</h2>
+
+            <p>
+                <span aria-hidden="true">⌖</span>
+                Southern California
+            </p>
+
+            <p>
+                <span aria-hidden="true">✉</span>
+                <a href="mailto:gennysgalleryy@icloud.com">
+                    gennysgalleryy@icloud.com
+                </a>
+            </p>
+
+            <p>
+                <span aria-hidden="true">☎</span>
+                <a href="tel:+10000000000">
+                    Phone number coming soon
+                </a>
+            </p>
+
+        </div>
+
+        <div class="footer-column footer-follow">
+
+            <h2>Follow</h2>
+
+            <a
+                href="https://www.instagram.com/gennysgalleryy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-instagram"
+            >
+                <span aria-hidden="true">◎</span>
+                @gennysgalleryy
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; <span id="current-year"></span>
+            GennysGallery Photography. All rights reserved.
+        </p>
+
+        <p>
+            Creative photography by Mari.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- Portfolio Lightbox -->
+<div
+    class="lightbox"
+    id="portfolio-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Portfolio image viewer"
+    aria-hidden="true"
+>
+    <button
+        class="lightbox-close"
+        type="button"
+        aria-label="Close image viewer"
+    >
+        ×
+    </button>
+
+    <button
+        class="lightbox-control lightbox-previous"
+        type="button"
+        aria-label="View previous image"
+    >
+        ←
+    </button>
+
+    <div class="lightbox-content">
+
+        <img
+            class="lightbox-image"
+            src=""
+            alt=""
+        >
+
+        <div class="lightbox-caption">
+            <p class="lightbox-category"></p>
+            <h2 class="lightbox-title"></h2>
+        </div>
+
+    </div>
+
+    <button
+        class="lightbox-control lightbox-next"
+        type="button"
+        aria-label="View next image"
+    >
+        →
+    </button>
+</div>
+
+    <!-- Website JavaScript -->
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

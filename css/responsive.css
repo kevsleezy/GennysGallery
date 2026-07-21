@@ -434,3 +434,171 @@
         flex-direction: column;
     }
 }
+/* =========================================
+   RESPONSIVE PORTFOLIO PAGE
+   ========================================= */
+
+@media screen and (max-width: 1100px) {
+
+    .portfolio-filter-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .portfolio-filters {
+        justify-content: flex-start;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-item-wide {
+        grid-column: span 2;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+
+    .portfolio-hero {
+        min-height: 60vh;
+        padding-top: 78px;
+    }
+
+    .portfolio-hero-content {
+        width: 88%;
+        margin-top: 35px;
+    }
+
+    .portfolio-gallery-section {
+        padding: 80px 6% 95px;
+    }
+
+    .portfolio-filter-header {
+        margin-bottom: 42px;
+    }
+
+    .portfolio-filters {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .filter-button {
+        flex: 1 1 calc(33.333% - 8px);
+        padding: 12px 10px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 50px;
+    }
+
+    .portfolio-item-wide {
+        grid-column: auto;
+    }
+
+    .portfolio-item img,
+    .portfolio-item-wide img,
+    .portfolio-item-tall img {
+        height: 560px;
+    }
+
+    .portfolio-item-overlay {
+        opacity: 1;
+        padding: 26px;
+
+        background:
+            linear-gradient(
+                transparent 40%,
+                rgba(0, 0, 0, 0.88)
+            );
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .portfolio-hero {
+        min-height: 55vh;
+    }
+
+    .portfolio-hero h1 {
+        font-size: 4.8rem;
+    }
+
+    .portfolio-filter-header h2 {
+        font-size: 3.15rem;
+    }
+
+    .filter-button {
+        flex: 1 1 calc(50% - 8px);
+        font-size: 0.6rem;
+    }
+
+    .portfolio-item img,
+    .portfolio-item-wide img,
+    .portfolio-item-tall img {
+        height: 470px;
+    }
+
+    .portfolio-item-title {
+        font-size: 1.7rem;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE LIGHTBOX
+   ========================================= */
+
+@media screen and (max-width: 760px) {
+
+    .lightbox {
+        padding: 70px 18px 32px;
+    }
+
+    .lightbox-content {
+        max-height: 88vh;
+    }
+
+    .lightbox-image {
+        max-height: 68vh;
+    }
+
+    .lightbox-close {
+        top: 14px;
+        right: 16px;
+
+        width: 44px;
+        height: 44px;
+    }
+
+    .lightbox-control {
+        top: auto;
+        bottom: 18px;
+
+        width: 48px;
+        height: 48px;
+
+        transform: none;
+    }
+
+    .lightbox-previous {
+        left: 18px;
+    }
+
+    .lightbox-next {
+        right: 18px;
+    }
+
+    .lightbox-caption {
+        margin-top: 16px;
+        padding: 0 60px;
+    }
+
+    .lightbox-title {
+        font-size: 2rem;
+    }
+}
