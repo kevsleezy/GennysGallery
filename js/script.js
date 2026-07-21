@@ -204,3 +204,26 @@ if (faqQuestions.length > 0) {
         });
     });
 }
+/* ---------- Scroll Reveal Animation ---------- */
+
+const revealElements = document.querySelectorAll(".reveal");
+
+if (revealElements.length > 0) {
+    const revealObserver = new IntersectionObserver(
+        function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("reveal-visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    revealElements.forEach(function (element) {
+        revealObserver.observe(element);
+    });
+}

@@ -2447,3 +2447,345 @@ body.lightbox-open {
     font-size: 0.95rem;
     line-height: 1.9;
 }
+/* =========================================
+   SERVICES EXPERIENCE SECTIONS
+   ========================================= */
+
+.experience-section {
+    min-height: 760px;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    background-color: var(--color-charcoal);
+}
+
+.experience-image {
+    min-height: 760px;
+    overflow: hidden;
+}
+
+.experience-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition:
+        transform 1s ease,
+        filter 0.6s ease;
+}
+
+.experience-section:hover .experience-image img {
+    transform: scale(1.035);
+    filter: brightness(0.9);
+}
+
+.experience-content {
+    padding: 95px clamp(48px, 7vw, 120px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experience-content h2 {
+    margin: 14px 0 28px;
+
+    font-family: var(--font-heading);
+    font-size: clamp(3.4rem, 5.8vw, 6.3rem);
+    font-weight: 400;
+    line-height: 0.92;
+}
+
+.experience-intro {
+    max-width: 650px;
+
+    color: var(--color-muted);
+
+    font-size: 0.92rem;
+    line-height: 1.95;
+}
+
+.experience-benefits {
+    margin: 34px 0 30px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.experience-benefits li {
+    position: relative;
+    padding-left: 26px;
+
+    color: var(--color-muted);
+
+    font-size: 0.8rem;
+    line-height: 1.8;
+}
+
+.experience-benefits li + li {
+    margin-top: 11px;
+}
+
+.experience-benefits li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+
+    color: var(--color-gold);
+}
+
+.experience-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.experience-types span {
+    padding: 9px 13px;
+
+    color: var(--color-gold);
+
+    border: 1px solid rgba(201, 165, 104, 0.3);
+
+    font-size: 0.61rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.experience-actions {
+    margin-top: 38px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 28px;
+}
+
+.experience-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding-bottom: 7px;
+
+    border-bottom: 1px solid rgba(201, 165, 104, 0.45);
+
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+
+    transition:
+        color var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.experience-link:hover {
+    color: var(--color-gold);
+    border-color: var(--color-gold);
+    transform: translateX(4px);
+}
+/* ---------- Reversed Experience Layout ---------- */
+
+.experience-section-reverse .experience-image {
+    order: 2;
+}
+
+.experience-section-reverse .experience-content {
+    order: 1;
+
+    background-color: var(--color-black);
+}
+/* =========================================
+   WHY CHOOSE
+========================================= */
+
+.why-choose{
+
+    padding:140px 8%;
+
+    background:#111;
+
+}
+
+.why-choose-header{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.why-choose-header h2{
+
+    margin:18px 0 25px;
+
+    font-size:clamp(3rem,6vw,5.5rem);
+
+    font-family:var(--font-heading);
+
+    font-weight:400;
+
+}
+
+.why-choose-header p:last-child{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--color-muted);
+
+    line-height:1.9;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin-top:90px;
+
+}
+
+.why-card{
+
+    padding:45px;
+
+    background:#171717;
+
+    border:1px solid rgba(201,165,104,.18);
+
+    transition:.35s;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--color-gold);
+
+}
+
+.why-card span{
+
+    color:var(--color-gold);
+
+    font-size:.75rem;
+
+    letter-spacing:.25em;
+
+    font-weight:700;
+
+}
+
+.why-card h3{
+
+    margin:20px 0;
+
+    font-size:1.45rem;
+
+}
+
+.why-card p{
+
+    color:var(--color-muted);
+
+    line-height:1.9;
+
+}
+/* =========================================
+   SERVICES FINAL CTA
+   ========================================= */
+
+.services-final-cta {
+    position: relative;
+    min-height: 680px;
+    padding: 120px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(
+            rgba(5, 5, 5, 0.52),
+            rgba(5, 5, 5, 0.84)
+        ),
+        url("../assets/images/portfolio/beach/beach-golden-rock-portrait.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.services-final-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(201, 165, 104, 0.12),
+            transparent 65%
+        );
+}
+
+.services-final-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(100%, 900px);
+
+    text-align: center;
+}
+
+.services-final-content h2 {
+    margin: 18px 0 28px;
+
+    font-family: var(--font-heading);
+    font-size: clamp(4rem, 7vw, 7rem);
+    font-weight: 400;
+    line-height: 0.92;
+}
+
+.services-final-content > p:last-of-type {
+    max-width: 650px;
+    margin: 0 auto 38px;
+
+    color: var(--color-muted);
+
+    font-size: 0.92rem;
+    line-height: 1.9;
+}
+/* =========================================
+   SCROLL REVEAL
+   ========================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(55px);
+
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s ease;
+}
+
+.reveal.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
