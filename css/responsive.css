@@ -1100,3 +1100,78 @@
         max-width: 310px;
     }
 }
+/* =========================================
+   RESPONSIVE CONTACT PAGE
+   ========================================= */
+
+@media screen and (max-width: 900px) {
+
+    .contact-page-hero {
+        padding: 165px 7% 110px;
+    }
+
+    .contact-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-hub {
+        padding: 110px 7%;
+    }
+
+    .contact-hub-heading {
+        margin-bottom: 65px;
+    }
+
+    .contact-final-cta {
+        padding: 135px 7%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .contact-page-hero {
+        padding: 145px 6% 90px;
+    }
+
+    .contact-page-content h1 {
+        font-size: clamp(3.7rem, 15vw, 5rem);
+    }
+
+    .contact-page-content p:last-child {
+        font-size: 0.95rem;
+    }
+
+    .contact-hub {
+        padding: 90px 6%;
+    }
+
+    .contact-hub-heading h2 {
+        font-size: 3.3rem;
+    }
+
+    .contact-card {
+        padding: 36px 28px;
+    }
+
+    .contact-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .contact-card-link {
+        overflow-wrap: anywhere;
+    }
+
+    .contact-final-cta {
+        padding: 110px 6%;
+    }
+
+    .contact-final-content h2 {
+        font-size: 3.8rem;
+    }
+
+    .contact-final-content .button {
+        width: 100%;
+        max-width: 310px;
+    }
+}

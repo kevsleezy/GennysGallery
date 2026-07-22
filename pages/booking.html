@@ -31,8 +31,8 @@
     >
 
     <!-- Website CSS -->
-    <link rel="stylesheet" href="../css/style.css?v=3">
-    <link rel="stylesheet" href="../css/responsive.css?v=3">
+    <link rel="stylesheet" href="../css/style.css?v=6">
+    <link rel="stylesheet" href="../css/responsive.css?v=6">
 </head>
 
 <body>
@@ -109,149 +109,36 @@
                 <h2>Start planning your session.</h2>
 
                 <p>
-                    This form is the first step. Once submitted, Mari will review
-                    your request and follow up to confirm availability, location,
-                    pricing, and the final session details.
+                 Choose a time that works best for you. During your
+                 consultation, you'll discuss your vision, preferred
+                 location, session details, pricing, and any questions
+                 before your photography experience.
                 </p>
 
                 <div class="booking-contact-note">
                     <span aria-hidden="true">✉</span>
 
                     <div>
-                        <p>Prefer to email directly?</p>
+                        <p>Have a question first?</p>
 
-                        <a href="mailto:gennysgalleryy@icloud.com">
-                            gennysgalleryy@icloud.com
+                        <a href="mailto:GennysGalleryy.media@gmail.com">
+                            GennysGalleryy.media@gmail.com
                         </a>
                     </div>
                 </div>
             </div>
 
-            <form class="booking-form" id="booking-form">
+            <!-- Calendly Inline Booking Calendar -->
+            <div class="calendly-booking-wrapper">
 
-                <div class="form-grid">
+            <div
+                class="calendly-inline-widget"
+                data-url="https://calendly.com/gennysgalleryy-media/photography-consultation?background_color=111111&text_color=f5f1e8&primary_color=c9a568"
+                data-resize="true"
+                style="min-width: 320px; height: 760px;"
+            ></div>
 
-                    <div class="form-group">
-                        <label for="client-name">Full Name</label>
-                        <input
-                            type="text"
-                            id="client-name"
-                            name="client-name"
-                            autocomplete="name"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="client-email">Email Address</label>
-                        <input
-                            type="email"
-                            id="client-email"
-                            name="client-email"
-                            autocomplete="email"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="client-phone">Phone Number</label>
-                        <input
-                            type="tel"
-                            id="client-phone"
-                            name="client-phone"
-                            autocomplete="tel"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="client-instagram">Instagram Handle</label>
-                        <input
-                            type="text"
-                            id="client-instagram"
-                            name="client-instagram"
-                            placeholder="@username"
-                        >
-                    </div>
-
-                    <div class="form-group form-group-full">
-                        <label for="session-type">Session Type</label>
-
-                        <select id="session-type" name="session-type" required>
-                            <option value="" selected disabled>
-                                Choose a session type
-                            </option>
-                            <option value="portrait">Portrait Session</option>
-                            <option value="couples">Couples Session</option>
-                            <option value="beach">Beach Session</option>
-                            <option value="studio">Studio Session</option>
-                            <option value="editorial">Editorial Session</option>
-                            <option value="creative">Creative Concept</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="preferred-date">Preferred Date</label>
-                        <input
-                            type="date"
-                            id="preferred-date"
-                            name="preferred-date"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="preferred-time">Preferred Time</label>
-
-                        <select id="preferred-time" name="preferred-time" required>
-                            <option value="" selected disabled>
-                                Choose a preferred time
-                            </option>
-                            <option value="morning">Morning</option>
-                            <option value="afternoon">Afternoon</option>
-                            <option value="golden-hour">Golden Hour</option>
-                            <option value="evening">Evening</option>
-                            <option value="flexible">Flexible</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group form-group-full">
-                        <label for="session-location">Preferred Location</label>
-                        <input
-                            type="text"
-                            id="session-location"
-                            name="session-location"
-                            placeholder="Beach, park, studio, desert, city, or another location"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group form-group-full">
-                        <label for="session-vision">Tell Me About Your Vision</label>
-
-                        <textarea
-                            id="session-vision"
-                            name="session-vision"
-                            rows="7"
-                            placeholder="Describe the style, mood, occasion, outfits, location ideas, or any inspiration you have."
-                            required
-                        ></textarea>
-                    </div>
-
-                </div>
-
-                <button class="button button-gold booking-submit" type="submit">
-                    Send Inquiry
-                    <span aria-hidden="true">→</span>
-                </button>
-
-                <p class="booking-form-note">
-                    Submitting this form does not confirm the booking.
-                    Mari will contact you to finalize availability and details.
-                </p>
-
-            </form>
+            </div>
 
         </section>
 <!-- Booking Process Section -->
@@ -805,8 +692,8 @@
 
             <p>
                 <span aria-hidden="true">✉</span>
-                <a href="mailto:gennysgalleryy@icloud.com">
-                    gennysgalleryy@icloud.com
+                <a href="mailto:GennysGalleryy.media@gmail.com">
+                    GennysGalleryy.media@gmail.com
                 </a>
             </p>
 
@@ -846,7 +733,13 @@
 </footer>
 
     <!-- Website JavaScript -->
-    <script src="../js/script.js?v=3"></script>
+    <script
+    src="https://assets.calendly.com/assets/external/widget.js"
+    type="text/javascript"
+    async
+></script>
+
+<script src="../js/script.js?v=6"></script>
 
 </body>
 </html>
