@@ -46,6 +46,12 @@
     <link rel="stylesheet" href="../css/style.css?v=6">
     <link rel="stylesheet" href="../css/responsive.css?v=6">
 
+    <!-- Leaflet Map CSS -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+>
+
 </head>
 
 <body>
@@ -244,6 +250,69 @@
 
         </section>
 
+        <!-- Interactive Service Area Map -->
+<section class="service-map-section reveal">
+
+    <div class="service-map-heading">
+
+        <p class="section-eyebrow">Service Area</p>
+
+        <h2>
+            Photography throughout San Diego County.
+        </h2>
+
+        <p>
+            GennysGallery offers studio and on-location sessions throughout
+            San Diego County, from the southern communities through Oceanside.
+            Travel outside the service area may be available for an additional
+            mileage fee.
+        </p>
+
+    </div>
+
+    <div class="service-map-layout">
+
+        <div
+            id="service-area-map"
+            class="service-area-map"
+            aria-label="Interactive map showing the GennysGallery service area"
+        ></div>
+
+        <div class="service-map-details">
+
+            <article>
+                <span>01</span>
+                <h3>Central San Diego</h3>
+                <p>
+                    Downtown, Balboa Park, coastal neighborhoods,
+                    urban locations, and surrounding communities.
+                </p>
+            </article>
+
+            <article>
+                <span>02</span>
+                <h3>North County</h3>
+                <p>
+                    Encinitas, Carlsbad, Oceanside, and nearby beach,
+                    park, and lifestyle locations.
+                </p>
+            </article>
+
+            <article>
+                <span>03</span>
+                <h3>Travel Available</h3>
+                <p>
+                    Locations outside San Diego County may be available
+                    for an additional $2 per mile.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
         <!-- Contact Final CTA -->
         <section class="contact-final-cta reveal">
 
@@ -374,6 +443,10 @@
         </div>
 
     </footer>
+    <!-- Leaflet Map JavaScript -->
+    <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    ></script>
 
     <script src="../js/script.js?v=6"></script>
 

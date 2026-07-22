@@ -227,3 +227,76 @@ if (revealElements.length > 0) {
         revealObserver.observe(element);
     });
 }
+/* ---------- Interactive Service Area Map ---------- */
+
+const serviceAreaMapElement = document.querySelector("#service-area-map");
+
+if (serviceAreaMapElement && typeof L !== "undefined") {
+    const serviceAreaMap = L.map("service-area-map", {
+        scrollWheelZoom: false
+    }).setView([32.95, -117.15], 9);
+
+    L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }
+    ).addTo(serviceAreaMap);
+
+    const serviceArea = L.polygon(
+        [
+            [33.50, -117.60],
+            [33.50, -116.10],
+            [32.62, -116.10],
+            [32.53, -117.30]
+        ],
+        {
+            color: "#c9a568",
+            weight: 2,
+            fillColor: "#c9a568",
+            fillOpacity: 0.13
+        }
+    ).addTo(serviceAreaMap);
+
+    serviceArea.bindPopup(
+        "<strong>GennysGallery Service Area</strong><br>Photography throughout San Diego County."
+    );
+
+    const locations = [
+        {
+            name: "Downtown San Diego",
+            coordinates: [32.7157, -117.1611],
+            description: "Central San Diego and surrounding communities."
+        },
+        {
+            name: "Mira Mesa Studio",
+            coordinates: [32.9156, -117.1439],
+            description: "Studio photography sessions in Mira Mesa."
+        },
+        {
+            name: "Oceanside",
+            coordinates: [33.1959, -117.3795],
+            description: "North County service area through Oceanside."
+        }
+    ];
+
+    locations.forEach(function (location) {
+        L.circleMarker(location.coordinates, {
+            radius: 8,
+            color: "#c9a568",
+            weight: 2,
+            fillColor: "#111111",
+            fillOpacity: 1
+        })
+            .addTo(serviceAreaMap)
+            .bindPopup(
+                `<strong>${location.name}</strong><br>${location.description}`
+            );
+    });
+
+    serviceAreaMap.fitBounds(serviceArea.getBounds(), {
+        padding: [25, 25]
+    });
+}

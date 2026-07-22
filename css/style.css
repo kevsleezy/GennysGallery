@@ -3601,3 +3601,181 @@ margin:0 auto 45px;
 line-height:1.9;
 
 }
+/* =========================================
+   INTERACTIVE SERVICE AREA MAP
+   ========================================= */
+
+.service-map-section {
+    padding: 130px 8%;
+    background-color: #0d0d0d;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.service-map-heading {
+    width: min(100%, 900px);
+    margin: 0 auto 75px;
+    text-align: center;
+}
+
+.service-map-heading h2 {
+    margin: 16px 0 24px;
+
+    font-family: var(--font-heading);
+    font-size: clamp(3.2rem, 5.8vw, 5.8rem);
+    font-weight: 400;
+    line-height: 0.95;
+}
+
+.service-map-heading > p:last-child {
+    max-width: 720px;
+    margin: 0 auto;
+
+    color: var(--color-muted);
+    line-height: 1.9;
+}
+
+.service-map-layout {
+    width: min(100%, 1450px);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+    gap: 38px;
+}
+
+.service-area-map {
+    min-height: 620px;
+
+    border: 1px solid rgba(201, 165, 104, 0.28);
+    background-color: #111111;
+    overflow: hidden;
+}
+
+.service-map-details {
+    display: grid;
+    gap: 22px;
+}
+
+.service-map-details article {
+    padding: 34px 30px;
+
+    background-color: #151515;
+    border: 1px solid rgba(201, 165, 104, 0.18);
+
+    transition:
+        transform var(--transition),
+        border-color var(--transition);
+}
+
+.service-map-details article:hover {
+    transform: translateY(-6px);
+    border-color: rgba(201, 165, 104, 0.6);
+}
+
+.service-map-details span {
+    color: var(--color-gold);
+
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.service-map-details h3 {
+    margin: 14px 0 12px;
+
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.service-map-details p {
+    color: var(--color-muted);
+
+    font-size: 0.8rem;
+    line-height: 1.8;
+}
+
+/* Leaflet styling */
+.leaflet-container {
+    background-color: #111111;
+    font-family: var(--font-body);
+}
+
+.leaflet-control-zoom a {
+    background-color: #111111;
+    color: var(--color-gold);
+    border-color: rgba(201, 165, 104, 0.35);
+}
+
+.leaflet-control-zoom a:hover {
+    background-color: #1b1b1b;
+    color: var(--color-white);
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+    background-color: #111111;
+    color: var(--color-white);
+}
+
+.leaflet-popup-content {
+    margin: 16px 18px;
+    line-height: 1.6;
+}
+
+.leaflet-control-attribution {
+    background-color: rgba(10, 10, 10, 0.82) !important;
+    color: #aaa;
+}
+
+.leaflet-control-attribution a {
+    color: var(--color-gold);
+}
+/* ==========================================
+   INSTAGRAM FEED
+========================================== */
+
+.instagram-feed-section{
+
+    padding:140px 8%;
+
+    text-align:center;
+
+}
+
+.instagram-feed-heading{
+
+    max-width:850px;
+
+    margin:0 auto 70px;
+
+}
+
+.instagram-feed-heading h2{
+
+    font-size:clamp(3rem,6vw,5rem);
+
+    margin:22px 0;
+
+    line-height:1;
+
+}
+
+.instagram-feed-heading p:last-child{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#bdbdbd;
+
+    line-height:1.9;
+
+}
+
+.instagram-follow{
+
+    margin-top:60px;
+
+}
