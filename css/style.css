@@ -3279,3 +3279,62 @@ body.lightbox-open {
     font-size: 0.78rem;
     line-height: 1.85;
 }
+/* =========================================
+   HOMEPAGE HERO ENTRANCE ANIMATION
+   ========================================= */
+
+.hero-animate {
+    opacity: 0;
+    transform: translateY(32px);
+
+    animation: heroEntrance 0.85s ease forwards;
+}
+
+.hero-delay-1 {
+    animation-delay: 0.15s;
+}
+
+.hero-delay-2 {
+    animation-delay: 0.3s;
+}
+
+.hero-delay-3 {
+    animation-delay: 0.45s;
+}
+
+.hero-delay-4 {
+    animation-delay: 0.6s;
+}
+
+.hero-delay-5 {
+    animation-delay: 0.75s;
+}
+
+.hero-delay-6 {
+    animation-delay: 0.95s;
+}
+
+@keyframes heroEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(32px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hero {
+    animation: heroBackgroundZoom 12s ease-out forwards;
+}
+
+@keyframes heroBackgroundZoom {
+    from {
+        background-size: 100%;
+    }
+
+    to {
+        background-size: 106%;
+    }
+}
