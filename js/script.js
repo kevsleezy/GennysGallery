@@ -299,4 +299,11 @@ if (serviceAreaMapElement && typeof L !== "undefined") {
     serviceAreaMap.fitBounds(serviceArea.getBounds(), {
         padding: [25, 25]
     });
+    setTimeout(function () {
+    serviceAreaMap.invalidateSize();
+}, 400);
+
+window.addEventListener("resize", function () {
+    serviceAreaMap.invalidateSize();
+});
 }

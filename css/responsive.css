@@ -1175,3 +1175,44 @@
         max-width: 310px;
     }
 }
+/* =========================================
+   RESPONSIVE SERVICE AREA MAP
+   ========================================= */
+
+@media screen and (max-width: 900px) {
+
+    .service-map-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .service-area-map {
+        width: 100%;
+        min-height: 520px;
+        height: 520px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .service-map-section {
+        padding: 90px 6%;
+    }
+
+    .service-map-heading {
+        margin-bottom: 55px;
+    }
+
+    .service-map-heading h2 {
+        font-size: 3.5rem;
+    }
+
+    .service-area-map {
+        min-height: 430px;
+        height: 430px;
+    }
+
+    .service-map-details article {
+        padding: 30px 26px;
+    }
+}
